@@ -1,0 +1,45 @@
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+nav > a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav > a:hover{
+    color: #fff;
+}
+.container{
+   /* display: flex;*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px; 
+}
+/*Banner Principal*/
+.banner-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/img/chicago.jpg');
+    background-size: cover;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
