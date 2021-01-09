@@ -2,6 +2,7 @@
     --vermelho:#e50914;
     --preta:#141414;
 }
+/*Layout base geral*/
 *{
     padding: 0;
     margin: 0;
@@ -20,8 +21,9 @@ nav > a{
 nav > a:hover{
     color: #fff;
 }
+/*Layout topo*/
 .container{
-   /* display: flex;*/
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -31,7 +33,7 @@ nav > a:hover{
     font-family: 'Arial Black';
     font-size: 40px; 
 }
-/*Banner Principal*/
+/*Layout Banner Principal*/
 .banner-principal{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/img/chicago.jpg');
@@ -42,4 +44,33 @@ nav > a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+.container-principal{
+    margin-left: 30px;
+    margin-right: 60%;
+
+}
+.descricao{
+    margin-bottom: 50px;
+}
+.titulo-filme{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+}
+.botao{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-right: 12px;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
 }
