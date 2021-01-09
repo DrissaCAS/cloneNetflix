@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS-->
     <link rel="stylesheet" href="/style/main.css">
+    <!--CSS responsividade-->
+    <link rel="stylesheet" href="style/responsivo.css">
+    <!-- OWL CSS-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>CLONEFLIX</title>
 </head>
 <body>
@@ -21,14 +29,16 @@
 
     <main>
         <div class="banner-principal">
-            <div class="container-principal">
+            <div class="container">
                 <h3 class="titulo-filme">CHICAGO FIRE</h3>
                 <p class="descricao">Acompanhe o dia-a-dia intenso e os dramas dos oficiais do Departamento de Bombeiros de Chicago e paramédicos do Quartel 51. A equipe composta por bombeiros, equipe de resgate e paramédicos, irá passar por situações tensas e delicadas, arriscando suas próprias vidas para salvar pessoas em perigo, além de ter que lidar com os conflitos pessoais e os desafios que surgem por conta das diferenças entre os companheiros de equipe.</p>   
                 <div class="botoes">
                     <button role="button" class="botao">
+                        <i class="fas fa-play"></i>   
                         ASSISTIR AGORA
                     </button>
                     <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
@@ -36,5 +46,49 @@
             
         </div>
     </main>
+
+    <div class="carrocel-destaque-filmes">
+        <h3 class="titulos-carrocel">Filmes Populares</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-destaque" src="img/min1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-destaque" src="img/min10.jpg" alt="" srcset="">
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/441af0fc38.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 }
 body{
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 nav > a{
@@ -22,7 +22,7 @@ nav > a:hover{
     color: #fff;
 }
 /*Layout topo*/
-.container{
+header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +35,7 @@ nav > a:hover{
 }
 /*Layout Banner Principal*/
 .banner-principal{
-    font-size: 16px;
+    font-size: 14px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/img/chicago.jpg');
     background-size: cover;
     height: 500px;
@@ -45,22 +45,27 @@ nav > a:hover{
     justify-content: center;
     align-items: flex-start;
 }
-.container-principal{
-    margin-left: 30px;
-    margin-right: 60%;
-
+.container{
+    margin-left: 4%;
+}
+.banner-principal .container{
+    width: 60%;
 }
 .descricao{
     margin-bottom: 50px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: justify;
 }
 .titulo-filme{
     margin-top: 15%;
     font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
 }
 .botao{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(80, 0, 0, 0.5);
     border: none;
     color: white;
 
@@ -69,8 +74,29 @@ nav > a:hover{
     margin-right: 12px;
     font-size: 12px;
     transition: .3s ease all;
+    font-weight: bold;
+
+    cursor: pointer;
 }
 .botao:hover{
     background-color: white;
-    color: black;
+    color: rgb(80, 0, 0);
+    font-weight: bold;
+}
+.botao i{
+    margin-right: 10px;
+}
+/*Carrocel*/
+.carrocel-destaque-filmes{
+    margin: 5px;
+}
+.box-destaque{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.titulos-carrocel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
 }
