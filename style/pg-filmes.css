@@ -1,0 +1,122 @@
+:root{
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+/*Layout base geral*/
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+nav > a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav > a:hover{
+    color: #fff;
+}
+/*Layout topo*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    padding: 0 30px;
+}
+/*Corpo*/
+main{
+    display: flex;
+}
+.left{
+    width: 30%;
+    text-align: center;
+}
+.left img{
+    width: 100%;
+    padding: 30px;
+}
+.right{
+    width: 70%;
+    padding: 20px;
+}
+.title-movies{
+    display: flex;
+    padding: 5px;
+}
+.title-movies h4{
+    font-size: 40px;
+    padding: 0 8px;
+}
+.caixa p{
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+.sinopse{
+    padding: 18px 30px 18px 18px;
+}
+.sinopse h3{
+    padding-bottom: 18px;
+}
+.texto p{
+    line-height: 1.8;
+}
+.info-filmes{
+    display: flex;
+    padding: 0 5px;
+    align-items: center;
+}
+.conteudo{
+    padding: 10px;
+}
+.atores h3{
+    padding: 10px 18px;
+}
+.box-destaque{
+    border-radius: 10px;
+}
+.item h5{
+    font-size: 14px;
+    padding: 3px;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+}
+.mais{
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+.diretores table{
+    width: 100%;
+    text-align: left;
+}
+/*Footer*/
+footer{
+    background-color: rgb(80, 0, 0);
+}
+.footer{
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.dev{
+    padding: 5px;
+    font-size: 15px;
+}
+.redes{
+    padding: 5px;
+    font-size: 20px;
+}

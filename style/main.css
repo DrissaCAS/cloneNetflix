@@ -4,6 +4,7 @@
 }
 /*Layout base geral*/
 *{
+    text-decoration: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -31,13 +32,15 @@ header .container{
 .logo{
     color: var(--vermelho);
     font-family: 'Arial Black';
-    font-size: 40px; 
+    font-size: 40px;
+    
 }
 /*Layout Banner Principal*/
 .banner-principal{
     font-size: 14px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('/img/chicago.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url("/img/chicago.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 500px;
 
     display: flex;
@@ -65,7 +68,7 @@ header .container{
     font-weight: 800;
 }
 .botao{
-    background-color: rgba(80, 0, 0, 0.5);
+    background-color: rgba(80, 0, 0, 0.9);
     border: none;
     color: white;
 
@@ -97,6 +100,23 @@ header .container{
 }
 .titulos-carrocel{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     margin: 10px;
+}
+/*Footer*/
+footer{
+    padding: 20px;
+    background-color: rgb(80, 0, 0);
+}
+.footer{
+    display: block;
+    text-align: center;
+}
+.dev{
+    padding: 5px;
+    font-size: 15px;
+}
+.redes{
+    padding: 5px;
+    font-size: 20px;
 }
